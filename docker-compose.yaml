@@ -1,0 +1,27 @@
+services:
+    db:
+        container_name: LibAppDb
+        image: postgres
+        environment:
+            POSTGRES_USER: ${DB_USER:-postgres}
+            POSTGRES_PASSWORD: ${DB_PASSWORD:-changeme}
+            POSTGRES_DB: ${DB_NAME:-lib_app}
+            PGDATA: /data/postgres
+        volumes:
+            - postgres:/data/postgres
+        ports:
+            - "5432:5432"
+        env_file:
+            .env
+    web:
+        container_name: LibApp
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - .:/project
+        ports:
+            - "8000:8000"
+        depends_on:
+            - db
+volumes:
+    postgres:

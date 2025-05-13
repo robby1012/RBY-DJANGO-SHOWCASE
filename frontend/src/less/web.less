@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap');
+
+.default-font{
+    font-family: "Roboto Mono", monospace !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p{
+    .default-font();
+}
+
+form {
+    .default-font();
+}
+
+
+ul{
+    .default-font();
+    &.no-bullet{
+        padding: 0 !important;
+        list-style: none !important;
+    }
+}
+
+h1 {
+    a.uk-logo{
+        font-size: 18pt !important;
+        font-family: "Roboto Mono", monospace !important;
+    }
+}
+
+.footer{
+    font-size: 9pt !important;
+    .copy{
+        font-size: 11pt !important;
+    }
+}
+
+#sidebar{
+	top: 0;
+    left: 0;
+	bottom: 0;
+    width: 250px;
+	background: #e9ecef;
+	border-right: 1px solid #adb5bd;
+    position: fixed;
+}
+
+#content{
+    
+}

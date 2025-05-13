@@ -1,0 +1,17 @@
+<div class="uk-container uk-padding">
+    <h1 class="uk-margin-bottom">Welcome to Library <span ng-show="$root.auth.first_name">{{ $root.auth.first_name }}</span> <span ng-show="$root.auth.last_name">{{ $root.auth.last_name }}</span></h1>
+    <hr/>
+    <div class="uk-child-width-1-3" ng-init="showBooks('http://localhost:8000/api/v1/library/book/')" uk-grid uk-height-match="target: > a > .uk-card">
+        <a href="#!/book/{{ item.uuid }}" ng-repeat="item in books">
+            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                <h5 class="uk-card-title uk-margin-remove">{{ item.title }}</h5>
+                <hr/>
+                <span class="uk-muted uk-display-block">Author:{{ item.author }}</span>
+                <span class="uk-muted uk-display-block">Published At:{{ item.publish }}</span>
+            </div>
+        </a>
+    </div>
+    <div class="uk-width-expand uk-text-center uk-margin-large-top">
+        <a ng-click="showBooks(next)" ng-show="next">Show more</a>
+    </div>
+</div>

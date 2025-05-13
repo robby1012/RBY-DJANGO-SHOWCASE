@@ -1,0 +1,12 @@
+- model: auth.user
+  pk: 1
+  fields:
+    first_name: "Super"
+    last_name: "User"
+    email: "sudo@app.com"
+    username: "sudo"
+    password: "pbkdf2_sha256$870000$dy8VlsrTrxfA4uS7H3qI5t$aJVLQXTOxJKfPkHRNRtF8b6WJXtUdx+1jMbhnUu8A8k="
+    is_superuser: true
+    is_active: true
+    is_staff: true
+#sudo987!@#

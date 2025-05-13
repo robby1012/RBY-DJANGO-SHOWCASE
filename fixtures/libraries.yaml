@@ -1,0 +1,109 @@
+- model: library.book
+  fields:
+    title: "Laskar Pelangi"
+    synopsis: "Follows the inspiring journey of ten students from a poor village school on Belitung Island as they pursue education despite immense challenges."
+    author: "Andrea Hirata"
+    price: 89000
+    publish: 2005
+    copies: 1
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Bumi Manusia"
+    synopsis: "A historical novel set in the Dutch colonial period, telling the love story of Minke, a native Javanese, and Annelies, a mixed-race girl."
+    author: "Pramoedya Ananta Toer"
+    price: 120000
+    publish: 1980
+    copies: 5
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Supernova: Ksatria, Puteri, dan Bintang Jatuh"
+    synopsis: "A philosophical and sci-fi novel exploring the intertwining lives of two lovers, a scientist, and a mysterious cosmic event."
+    author: "Dee Lestari"
+    price: 85000
+    publish: 2001
+    copies: 3
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Ayat-Ayat Cinta"
+    synopsis: "A romantic drama about Fahri, an Indonesian student in Egypt, who navigates faith, love, and cultural tensions in his life."
+    author: "Habiburrahman El Shirazy"
+    price: 75000
+    publish: 2004
+    copies: 4
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Cantik Itu Luka"
+    synopsis: "A surreal and tragic family saga about Dewi Ayu, a beautiful prostitute, and her cursed descendants, blending myth, history, and politics."
+    author: "Eka Kurniawan"
+    price: 98000
+    publish: 2002
+    copies: 1
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Brief Answers to the Big Questions"
+    synopsis: "A collection of Stephen Hawking's thoughts on the universe, black holes, artificial intelligence, and the future of humanity."
+    author: "Stephen Hawking"
+    price: 150000
+    publish: 2018
+    copies: 3
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Sapiens: A Brief History of Humankind"
+    synopsis: "Explores the evolution of Homo sapiens from primitive beginnings to the present, touching on biology, history, and the future of human societies."
+    author: "Yuval Noah Harari"
+    price: 180000
+    publish: 2014
+    copies: 2
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "The Gene: An Intimate History"
+    synopsis: "An exploration of the history of genetics, from Mendel's experiments to the modern-day study of DNA, and its impact on human identity."
+    author: "Siddhartha Mukherjee"
+    price: 210000
+    publish: 2016
+    copies: 2
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "Astrophysics for People in a Hurry"
+    synopsis: "A concise guide to the fundamental concepts of astrophysics, written in an accessible way for readers of all backgrounds."
+    author: "Neil deGrasse Tyson"
+    price: 130000
+    publish: 2017
+    copies: 4
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'
+
+- model: library.book
+  fields:
+    title: "The Selfish Gene"
+    synopsis: "Introduces the idea that evolution is driven by genes and explores how selfish genes shape behavior in animals and humans."
+    author: "Richard Dawkins"
+    price: 170000
+    publish: 1976
+    copies: 1
+    created_at: '2024-09-21 15:00:00'
+    updated_at: '2024-09-21 15:00:00'

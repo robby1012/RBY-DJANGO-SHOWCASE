@@ -1,0 +1,32 @@
+<div class="uk-container uk-padding">
+    <h1 class="uk-margin-bottom">Sign in</h1>
+    <div class="uk-child-width-1-1" uk-grid uk-height-match="target: > div > .uk-card">
+        <div>
+            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                <form ng-submit="submit()">
+                    <div class="uk-alert-danger" uk-alert ng-show="error">
+                        <p>{{ error }}</p>
+                    </div>
+                    <div class="uk-alert-success" uk-alert ng-show="success">
+                        <p>{{ success }}</p>
+                    </div>
+                    <div class="uk-card-body">
+                        <div class="uk-margin">
+                            <label class="uk-text-small">Username</label>
+                            <input class="uk-input" type="text" aria-label="Input" ng-model="username">
+                            <label class="uk-text-small uk-text-danger">{{ errors.username[0] }}</label>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-text-small">Password</label>
+                            <input class="uk-input" type="password" aria-label="Password" ng-model="password">
+                            <label class="uk-text-small uk-text-danger">{{ errors.password[0] }}</label>
+                        </div>
+                    </div>
+                    <div class="uk-card-footer">
+                        <button type="submit" class="uk-button uk-button-primary" ng-disabled="!isSubmit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

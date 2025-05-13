@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+
+</head>
+
+<body ng-app="App" ng-controller="RootController">
+    <!-- LEFT BAR -->
+    <aside id="sidebar" class="uk-visible@s uk-height-viewport uk-padding-vertical uk-padding-small">
+        <h4 class="uk-margin-remove">A Simple Library</h4>
+        <hr/>
+        <div class="uk-width-expand">
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#"><span uk-icon="home"></span> Home</a></li>
+                <li ng-show="$root.auth.username"><a href="#"><span uk-icon="bookmark"></span> My books</a></li>
+                <li ng-show="$root.auth.username"><a href="#"><span uk-icon="history"></span> Logs/History</a></li>
+                <li ng-hide="$root.auth.username"><a href="#"><span uk-icon="user"></span> Signin / Signup</a></li>
+                <li ng-show="$root.auth.username"><a href="#"><span uk-icon="pencil"></span> Profile</a></li>
+                <li ng-show="$root.auth.username"><a href="#"><span uk-icon="user"></span> Logout</a></li>
+            </ul>
+        </div>
+    </aside>
+    <aside id="content" ng-view></aside>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<div class="uk-container uk-padding">
+    <h1 class="uk-margin-bottom">{{ book.title }}</h1>
+    <div class="uk-child-width-1-1" ng-init="showBook()" uk-grid uk-height-match="target: > div > .uk-card">
+        <div>
+            <div class="uk-card uk-card-default uk-card-small uk-card-body">
+                <div class="uk-card-header">
+                    <h5 class="uk-card-title uk-margin-remove">{{ book.author }} ({{ book.publish}})</h5>
+                </div>
+                <div class="uk-card-body">
+                    <p class="uk-text-meta">
+                        {{ book.synopsis }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
