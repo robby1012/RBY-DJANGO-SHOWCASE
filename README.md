@@ -1,6 +1,9 @@
 Robby Sitanala Python Job Test
 May 13 2025
 
+#Tech Stack
+Backend : Django
+Frontend : Angular
 
 # Installation
 For docker
